@@ -20,7 +20,7 @@
   "homepage": "https://github.com/bahmutov/cypress-get-by-label-example#readme",
   "devDependencies": {
     "cypress": "6.3.0",
-    "cypress-get-by-label": "2.0.1",
+    "cypress-get-by-label": "2.1.0",
     "prettier": "2.2.1"
   }
 }
