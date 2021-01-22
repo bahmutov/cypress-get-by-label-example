@@ -1,6 +1,4 @@
-// enables intelligent code completion for Cypress commands
-// https://on.cypress.io/intelligent-code-completion
-/// <reference types="cypress" />
+/// <reference types="cypress-get-by-label" />
 const { registerCommand } = require('cypress-get-by-label')
 registerCommand()
 // or we could register under a different name
