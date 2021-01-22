@@ -5,6 +5,8 @@
 
 See [cypress/integration/spec.js](cypress/integration/spec.js)
 
+Read [How to Publish Custom Cypress Command on NPM](https://glebbahmutov.com/blog/publishing-cypress-command/)
+
 [ci image]: https://github.com/bahmutov/cypress-get-by-label-example/workflows/ci/badge.svg?branch=main
 [ci url]: https://github.com/bahmutov/cypress-get-by-label-example/actions
 [renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
