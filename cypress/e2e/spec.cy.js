@@ -1,23 +1,20 @@
-/// <reference types="cypress-get-by-label" />
-import { registerCommand } from 'cypress-get-by-label'
-registerCommand()
-// or we could register under a different name
-registerCommand('getFormField')
+/// <reference types="cypress" />
 
-describe('cypress-get-by-label', () => {
-  it('find the elements', () => {
-    // path with respect to the root folder
-    cy.visit('cypress/index.html')
-    cy.getByLabel('First name:').should('have.value', '').type('Joe')
-    cy.getByLabel('First name:').should('have.value', 'Joe')
-    // try alternative command name
-    cy.getFormField('Last name:').type('Smith')
-    // check the form inputs
-    cy.get('form')
-      .invoke('serializeArray')
-      .should('deep.equal', [
-        { name: 'fname', value: 'Joe' },
-        { name: 'lname', value: 'Smith' },
-      ])
-  })
+it('finds the input elements by their labels', () => {
+  // path with respect to the root folder
+  cy.visit('cypress/index.html')
+
+  // find the element with the label "First name:"
+  // and type "Joe"
+  // Hint: use https://github.com/bahmutov/cypress-get-by-label
+  //
+  // find the element with the label "Last name:"
+  // and type "Smith"
+  //
+  // check the form inputs using jQuery method
+  // https://api.jquery.com/serializeArray/
+  // which returns an array of "name/value" objects
+  // https://on.cypress.io/get
+  // https://on.cypress.io/invoke
+  // https://glebbahmutov.com/cypress-examples/commands/assertions.html
 })
