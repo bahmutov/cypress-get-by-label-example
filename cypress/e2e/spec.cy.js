@@ -1,4 +1,3 @@
-/// <reference types="cypress-get-by-label" />
 import { registerCommand } from 'cypress-get-by-label'
 registerCommand()
 // or we could register under a different name
