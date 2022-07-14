@@ -5,7 +5,10 @@ module.exports = defineConfig({
   viewportHeight: 300,
   viewportWidth: 300,
   e2e: {
-    setupNodeEvents(on, config) {},
+    setupNodeEvents(on, config) {
+      // https://github.com/bahmutov/cypress-high-resolution
+      return require('cypress-high-resolution')(on, config)
+    },
     supportFile: false,
   },
 })

@@ -1,6 +1,8 @@
 import 'cypress-get-by-label/commands'
 
-it('find the elements', () => {
+chai.config.truncateThreshold = 200
+
+it('find the elements', { viewportWidth: 1000, viewportHeight: 1000 }, () => {
   // path with respect to the root folder
   cy.visit('cypress/index.html')
 
@@ -14,4 +16,8 @@ it('find the elements', () => {
       { name: 'fname', value: 'Joe' },
       { name: 'lname', value: 'Smith' },
     ])
+  // take a screenshot of the entire test runner
+  // so it includes the command log and the app
+  // the screenshot should be saved as "cypress/screenshots/form.png"
+  cy.screenshot('form', { capture: 'runner', overwrite: true })
 })

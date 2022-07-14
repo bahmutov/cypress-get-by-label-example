@@ -22,6 +22,7 @@
   "devDependencies": {
     "cypress": "10.3.0",
     "cypress-get-by-label": "^2.4.0",
+    "cypress-high-resolution": "^1.0.0",
     "prettier": "2.2.1"
   }
 }
