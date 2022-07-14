@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "types": ["cypress", "cypress-get-by-label"]
+  },
+  "include": ["cypress/**/*.js"]
+}
