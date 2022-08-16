@@ -1,5 +1,5 @@
 # cypress-get-by-label-example
-![cypress version](https://img.shields.io/badge/cypress-10.4.0-brightgreen) ![cypress-get-by-label version](https://img.shields.io/badge/cypress--get--by--label-2.4.0-brightgreen) [![ci status][ci image]][ci url] [![renovate-app badge][renovate-badge]][renovate-app]
+![cypress version](https://img.shields.io/badge/cypress-10.5.0-brightgreen) ![cypress-get-by-label version](https://img.shields.io/badge/cypress--get--by--label-2.4.0-brightgreen) [![ci status][ci image]][ci url] [![renovate-app badge][renovate-badge]][renovate-app]
 
 > Example repo showing [cypress-get-by-label](https://github.com/bahmutov/cypress-get-by-label) in action
 
