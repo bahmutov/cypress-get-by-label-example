@@ -1,0 +1,10 @@
+<labels>
+  <label>
+    <text>First name:</text>
+    <id>fname</id>
+  </label>
+  <label>
+    <text>Last name:</text>
+    <id>lname</id>
+  </label>
+</labels>
