@@ -7,6 +7,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on('task', {
         printObject(o) {
+          // parse the object we receive
+          // and try printing it to the console
           console.log('received object', o)
 
           // send an object with a circular reference
@@ -18,7 +20,7 @@ module.exports = defineConfig({
           }
           // set a circular reference
           report.entry.report = report
-
+          // how would you safely send the report?
           return report
         },
       })
