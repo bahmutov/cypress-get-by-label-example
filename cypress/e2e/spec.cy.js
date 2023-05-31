@@ -1,22 +1,14 @@
-import { registerCommand } from 'cypress-get-by-label'
-registerCommand()
-// or we could register under a different name
-registerCommand('getFormField')
+/// <reference types="cypress" />
 
-describe('cypress-get-by-label', () => {
-  it('find the elements', () => {
-    // path with respect to the root folder
-    cy.visit('cypress/index.html')
-    cy.getByLabel('First name:').should('have.value', '').type('Joe')
-    cy.getByLabel('First name:').should('have.value', 'Joe')
-    // try alternative command name
-    cy.getFormField('Last name:').type('Smith')
-    // check the form inputs
-    cy.get('form')
-      .invoke('serializeArray')
-      .should('deep.equal', [
-        { name: 'fname', value: 'Joe' },
-        { name: 'lname', value: 'Smith' },
-      ])
-  })
+it('adds a property to Cypress.env', () => {
+  // print Cypress.env object to the terminal
+  // add another property to the Cypress.env
+  // Cypress.env('answer', 42)
+  // print the changed Cypress.env object to the terminal
+  // did you see the "answer: 42"?
+})
+
+it('has the added property', () => {
+  // print the Cypress.env object to the terminal
+  // did you see the "answer: 42" added in the first test?
 })
