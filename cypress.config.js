@@ -13,7 +13,21 @@ module.exports = defineConfig({
       },
       valid: true,
     },
-    setupNodeEvents(on, config) {},
+    setupNodeEvents(on, config) {
+      // print the initial Cypress.env object
+      // Tip: it is part of the config
+      console.log('initial env object')
+      console.log(config.env)
+
+      on('task', {
+        print(o) {
+          console.log(o)
+          // cy.task callbacks cannot return undefined
+          // so we return null at the end
+          return null
+        },
+      })
+    },
     supportFile: false,
   },
 })
